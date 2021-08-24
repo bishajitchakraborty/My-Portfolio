@@ -1,0 +1,340 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    background-color: beige;
+    height: 100vh;
+    width: 150px;
+    float: left;
+}
+
+.header h3 I {
+    margin: 20px;
+}
+
+.header .manuber {
+    margin-top: 50px;
+}
+
+.header .manuber ul {
+    height: 100vh;
+}
+
+.header .manuber li {
+    list-style: none;
+    cursor: pointer;
+    padding: 10%;
+}
+
+.mainbody {
+    width: calc(100% - 150px);
+    height: 100vh;
+    float: right;
+}
+
+/* Contact page css  start*/
+
+.home {
+    background-color: rgb(227, 236, 230);
+    width: calc(100% - 150px);
+    height: 100vh;
+}
+
+.home .b {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-left: 100px;
+    margin-top: 50px;
+    
+    
+}
+.home .b h4{
+    text-align: center;
+    margin-top: 50px;
+}
+.home img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    margin-top: 170px;
+    margin-left: 550px;
+}
+
+.home .name {
+    margin-top: 10px;
+    margin-left: 550px;
+}
+
+.home .profession {
+    margin-top: 5px;
+    margin-left: 580px;
+}
+
+/* Contact page css  end*/
+
+.about {
+    background-color: rgb(227, 236, 230);
+    width: calc(100% - 150px);
+    height: 100vh;
+}
+
+.about .ab h4 {
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.about .name1 {
+    margin-top: 5px;
+    margin-left: 30px;
+}
+
+.about .profession1 {
+    margin-left: 30px;
+}
+
+.about .about_details {
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+.about .cv {
+    margin-top: 20px;
+    margin-left: 60px;
+}
+
+.about .submanuber {
+    margin-top: 50px;
+    text-align: center;
+    margin-left: 500px;
+}
+
+.about .submanuber ul {
+    height: 20px;
+    display: flex;
+    border: 2px solid rgb(227, 236, 230);
+}
+
+.about .submanuber li {
+    list-style: none;
+    cursor: pointer;
+    padding: 30px;
+    border-radius: 25px;
+    margin: 5px;
+    height: 30px;
+    width: 160px;
+}
+
+.about .cv input {
+    border-radius: 12px;
+    height: 50px;
+    width: 150px;
+}
+
+.about .skills {
+    background-color: rgb(227, 236, 230);
+    width: 100%;
+    height: 400px;
+    margin-top: 40px;
+}
+
+.about .skills .skillsmap {
+    margin-top: 50px;
+    margin-left: 350px;
+}
+
+#disk_c {
+    width: 500px;
+}
+
+.about .experience {
+    background-color: rgb(227, 236, 230);
+    width: 100%;
+    height: 400px;
+    margin-top: 40px;
+}
+
+.experience .experience1 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.experience1>div {
+    margin: 10px;
+    padding: 20px;
+    height: 250px;
+    width: 450px;
+    background-color: snow;
+}
+
+.about .education {
+    background-color: rgb(227, 236, 230);
+    width: 100%;
+    height: 400px;
+    margin-top: 40px;
+}
+
+.education .nestededucation {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.nestededucation>div {
+    margin: 10px;
+    padding: 20px;
+    height: 230px;
+    width: 400px;
+    background-color: snow;
+}
+
+.about .education img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-left: 290px;
+}
+
+/* Contact page css  start*/
+
+.contact {
+    background-color: rgb(227, 236, 230);
+    width: calc(100% - 150px);
+    height: 100vh;
+}
+
+.contact .head {
+    text-align: center;
+    margin: 20px;
+}
+
+.contact .head h4 {
+    margin-top: 5px;
+}
+
+.con {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.con>div {
+    margin: 10px;
+    padding: 20px;
+    height: 150px;
+    width: 350px;
+    background-color: snow;
+}
+
+.icon {
+    text-align: center;
+}
+
+.con1 {
+    margin-top: 10px;
+}
+
+.hare {
+    margin-left: 100px;
+    border-radius: 12px;
+    float: left;
+}
+
+.mess {
+    float: right;
+}
+
+#ip2 {
+    border-radius: 25px;
+    border: 2px solid rgb(227, 236, 230);
+    height: 15px;
+    width: 560px;
+    padding: 25px;
+    margin: 10px
+}
+
+.ip3 {
+    margin-top: 10px;
+    float: right;
+    height: 195px;
+    width: 520px;
+    border: 2px solid rgb(227, 236, 230);
+    border-radius: 25px;
+    margin-right: 155px;
+}
+
+#ip4 {
+    margin-top: 20px;
+    float: right;
+    height: 50px;
+    width: 160px;
+    border: 2px solid rgb(227, 236, 230);
+    border-radius: 25px;
+    margin-right: 150px;
+}
+
+/* Contact page css  end*/
+
+.projects {
+    background-color: #e47c06;
+    width: calc(100% - 150px);
+    height: 100vh;
+}
+
+/* Service page css  Start*/
+
+.services {
+    background-color: rgb(227, 236, 230);
+    width: calc(100% - 150px);
+    height: 100vh;
+}
+
+.services .head {
+    text-align: center;
+    margin: 20px;
+}
+
+.services .head h4 {
+    margin-top: 5px;
+}
+
+.services .service {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.service>div {
+    margin: 10px;
+    padding: 20px;
+    height: 200px;
+    width: 350px;
+    background-color: snow;
+}
+
+.service1 h4 {
+    text-align: center;
+}
+
+/* Service page css  end*/
+
+.common {
+    position: fixed;
+    display: none;
+}
+
+.active {
+    display: block !important;
+}

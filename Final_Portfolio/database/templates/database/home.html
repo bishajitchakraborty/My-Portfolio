@@ -1,0 +1,195 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'database/css/all.min.css' %}">
+    <link rel="stylesheet" href="{% static 'database/css/home.css' %}">
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+        <h3><I>Bishajit<br>Chakraborty</I></h3>
+        <div class="manuber">
+            <ul>
+                <li class="hbtn">Home</li>
+                <li class="abtn">About</li>
+                <li class="sbtn">Services</li>
+                <li class="cbtn">Contact</li>
+                <li class="pbtn">Projects</li>
+                
+            </ul>
+        </div>
+    </div>
+    <div class="mainbody">
+       <section class="home common active"> 
+           <div class="b">
+               <h2>B</h2>
+           </div>
+           <img src="{% static 'database/images/Bishajit.jpg' %}" alt="">
+           {% for pro in profile %}
+                  <div class="name">
+                      <h3><I>{{pro.firstname}} {{pro.lastname}}</I></h3>
+                  </div>
+           {% endfor %}
+           {% for profession in professions %}
+                 <div class="profession">
+                     {{profession.profession}}
+                 </div>
+           {% endfor %}
+          <i class="fal fa-eject"></i>
+       </section>
+       <section class="about common"> 
+           <div class="ab">
+                <h4><I>About Me</I></h4>
+           </div>
+           <div class="name1">
+                {% for pro in profile %}
+                    <I>{{pro.firstname}} {{pro.lastname}}.</I>
+                {% endfor %}
+                {% for profession in professions %}
+                    {{profession.profession}}.
+                {% endfor %}
+            </div>
+            
+            
+            {% for ab in about %}
+                  <div class="about_details">
+                      {{ab.about}}
+                  </div>
+            {% endfor %}
+            <div class="cv">
+                <input type="submit" value="Download CV" name="" id="">
+            </div>
+            <div class="submanuber">
+                <ul>
+                    <li class="skbtn">Skills</li>
+                    <li class="exbtn">Experience</li>
+                    <li class="edbtn">Education</li>
+            
+                </ul>
+            </div>
+            <section class="skills common active">
+                <!-- {% for skill in skills %}
+                {{skill.skill}}
+                {% endfor %} -->
+                    <div class="skillsmap">
+                    
+                       <label for="disk_d">Css3:</label>
+                       <meter  id="disk_c" value="60" min="0" max="100">60%</meter><br>
+
+
+                       <label for="disk_c">Java:</label>
+                       <meter id="disk_c" value="65" min="0" max="100">65%</meter><br>
+                     
+
+                       <label for="disk_d">Html5:</label>
+                       <meter id="disk_c" value="85" min="0" max="100">85%</meter><br>
+
+
+                      <label for="disk_c">Python:</label>
+                      <meter id="disk_c" value="75" min="0" max="100">75%</meter><br>
+
+                      <label for="disk_d">Django:</label>
+                      <meter id="disk_c" value="75" min="0" max="100">75%</meter><br>
+
+                      <label for="disk_d">Algorithm:</label>
+                      <meter id="disk_c" value="60" min="0" max="100">60%</meter><br>
+                    
+                      <label for="disk_d">JavaScript:</label>
+                      <meter id="disk_c" value="65" min="0" max="100">65%</meter><br>
+
+                    
+                      <label for="disk_d">Data Structure:</label>
+                      <meter id="disk_c" value="75" min="0" max="100">75%</meter><br>
+
+                    
+                    </div>
+              
+            </section>
+            <section class="experience common ">
+                <div class="experience1">
+                   {% for ex in experiernces %}
+                       <div class="ex1">
+                            <i class="far fa-calendar-alt"></i>
+                            {{ex.start_date}}<br>
+                            {{ex.posision}}<br>
+                            {{ex.company_name}}<br>
+                            {{ex.address}}<br>
+                            {{ex.description}}<br>
+                      </div>
+                    {% endfor %}
+                </div>
+            </section>
+            <section class="education common ">
+                <div class="nestededucation">
+                    {% for ed in education %}
+                      <div class="ed1">
+                           <i class="far fa-calendar-alt"></i>
+                           <I>Start Date:{{ed.start_date}}</I>
+                           <img src="{% static 'database/images/seu.jpg' %}" alt=""><br>
+                           <i class="far fa-calendar-alt"></i>
+                           <I> Exp. Date: {{ed.end_date}}</I><br>
+                           <I>{{ed.institution_name}}</I><br>
+                           <I>{{ed.education}}</I><br>
+                           <I>CGPA:{{ed.CGPA}}(Out Of {{ed.Out_of}})</I><br>
+                           <!-- <I>Out Of:</I><br> -->
+                       </div>
+                    {% endfor %}
+                </div>
+            </section>
+      </section>
+      <section class="contact common">
+           <div class="head">
+                <h3>CONTACT</h3>
+                <h1>GET IN TOUCH</h1>
+           </div>
+          {% for con in contact %}
+              <div class="con">
+                   <div class="icon"><i class="fas fa-phone"></i><br>
+                        <div class="con1">
+                            Phone<br>{{con.phone}}
+                        </div>
+                    </div>
+                   <div class="icon"><i class="glyphicon glyphicon-envelope"></i><br>
+                        <div class="con1">
+                            Gmail<br>{{con.email}}
+                        </div>
+                       
+                   </div>
+                   <div class="icon"><i class="fas fa-map-marker-alt"></i><br>
+                         <div class="con1">
+                            Location<br>{{con.address}}
+                          </div>
+                   </div>  
+               </div>
+          {% endfor %}
+          <div class="hare">
+              <input type="text" id="ip2" placeholder="Name"><br>
+              <input type="text" id="ip2" placeholder="Gmail"><br>
+              <input type="text" id="ip2" placeholder="Subject"><br>
+          </div>
+          <div class="mess">
+            <input type="text" class="ip3" placeholder="Message"><br>
+          </div>
+          <input type="submit" value="Send Message" name="" id="ip4">  
+     </section>
+     <section class="services common">
+            <div class="head">
+                  <h3>SERVICES</h3>
+                  <h1>WHAT I DO</h1>
+            </div>
+            <div class="service">
+               {% for ser in services %}
+                      <div class="service1"><h4>{{ser.service_name}}</h4><br>{{ser.description}}</div> 
+               {% endfor %} 
+            </div>
+      </section>
+      <section class="projects common ">Projects page</section>
+ </div>
+    <script src="{% static 'database/js/home.js' %}"></script>
+</body>
+</html>
